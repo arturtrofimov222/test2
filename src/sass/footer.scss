@@ -1,0 +1,124 @@
+@import "variables.scss";
+
+.footer {
+  font-family: $f_merriweather;
+  padding-top: 40px;
+
+  .img-logo {
+	position: relative;
+	right: -40px;
+  }
+
+  .container {
+	max-width: 1592px;
+  }
+
+  &-content {
+	background: $c_white;
+	padding-top: 100px;
+	padding-bottom: 100px;
+  }
+
+  &-heading {
+	padding-bottom: 91px;
+
+	.line {
+	  flex-grow: 1;
+	  height: 1px;
+	  background: $c_grey;
+	  margin: 0 15px;
+	}
+
+	h3 {
+	  font-style: normal;
+	  font-weight: normal;
+	  font-size: 18px;
+	  line-height: 23px;
+	  color: $c_black2;
+	  text-transform: uppercase;
+
+	  span {
+		flex-grow: 1;
+		height: 1px;
+		background: $c_grey;
+		display: block;
+		width: 50px;
+		margin-right: 15px;
+	  }
+	}
+
+	h4 {
+	  color: $c_black2;
+	  font-style: normal;
+	  font-weight: normal;
+	  font-size: 14px;
+	  line-height: 18px;
+	  text-transform: uppercase;
+	}
+  }
+
+  &-contacts {
+	&-info {
+	  padding-left: 20px;
+
+	  h5 {
+		color: $c_black;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 14px;
+		line-height: 18px;
+		padding-bottom: 15px;
+	  }
+
+	  a, address {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		line-height: 25px;
+		color: $c_black;
+	  }
+	}
+  }
+
+  &-rights {
+	padding-top: 43px;
+	padding-bottom: 43px;
+
+	.follow-us {
+	  font-style: normal;
+	  font-weight: bold;
+	  font-size: 16px;
+	  line-height: 170%;
+	  color: $c_black;
+	  text-transform: uppercase;
+
+	  a {
+		display: flex;
+		align-items: center;
+		margin: 0 5px;
+	  }
+	}
+
+	.rights-text {
+	  font-style: normal;
+	  font-weight: normal;
+	  font-size: 14px;
+	  line-height: 18px;
+	  color: $c_grey5;
+
+	}
+
+	.made-by {
+	  font-style: normal;
+	  font-weight: normal;
+	  font-size: 14px;
+	  line-height: 18px;
+	  color: $c_grey5;
+
+	  a {
+		color: $c_black;
+		margin-left: 10px;
+	  }
+	}
+  }
+}

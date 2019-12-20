@@ -1,0 +1,21 @@
+@import "variables";
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.counter{
+  width:30px;
+  height:25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:$c_red;
+}
+h2{
+  font-family:$f_merriweather;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 60px;
+}

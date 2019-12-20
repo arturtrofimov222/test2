@@ -1,0 +1,81 @@
+@import "variables.scss";
+
+.header {
+  font-family: $f_merriweather;
+  background: $c_grey;
+
+  .navbar-brand {
+	padding: 0 50px;
+  }
+
+  .navbar {
+	margin: 0 auto;
+	background: $c_white;
+	padding: 0;
+  }
+
+  .navbar-nav {
+	border-left: 1px solid rgba(0, 0, 0, 0.05);
+
+	.nav-item {
+	  a {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 19px;
+		color: $c_black;
+		text-decoration: none;
+		text-transform: uppercase;
+		padding: 60px 45px;
+		border-right: 1px solid rgba(0, 0, 0, 0.05);
+		border-bottom: 5px solid transparent;
+
+		&:hover {
+		  border-bottom: 5px solid $c_red;
+		}
+	  }
+	}
+
+	.nav-item.active {
+	  a {
+		border-bottom: 5px solid $c_red;
+	  }
+	}
+  }
+
+  .dropdown-group {
+	padding: 40px;
+	background: $c_grey2;
+	flex-grow: 1;
+
+	.select-lang {
+	  -webkit-appearance: none;
+	  border: none;
+	  background: transparent;
+	  margin-left: 10px;
+	}
+
+	.btn {
+	  width: 60px;
+	  height: 60px;
+	  background: $c_white;
+	  border-radius: 0;
+	  position: relative;
+	  margin: 0 5px;
+
+	  .counter {
+		position: absolute;
+		top: -14px;
+		right: 7px;
+		font-weight: 900;
+		font-size: 14px;
+		line-height: 18px;
+		color: $c_white;
+	  }
+
+	  &:after {
+		display: none;
+	  }
+	}
+  }
+}
