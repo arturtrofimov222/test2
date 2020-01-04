@@ -6,6 +6,14 @@
 
   .navbar-brand {
 	padding: 0 50px;
+
+	@media(max-width: 1615px) {
+	  padding: 0 20px;
+	}
+
+	img {
+	  width: 100%;
+	}
   }
 
   .navbar {
@@ -26,9 +34,13 @@
 		color: $c_black;
 		text-decoration: none;
 		text-transform: uppercase;
-		padding: 60px 45px;
+		padding: 60px 3vw;
 		border-right: 1px solid rgba(0, 0, 0, 0.05);
 		border-bottom: 5px solid transparent;
+
+		@media(max-width: 1615px) {
+		  font-size: 0.7vw;
+		}
 
 		&:hover {
 		  border-bottom: 5px solid $c_red;
@@ -47,6 +59,10 @@
 	padding: 40px;
 	background: $c_grey2;
 	flex-grow: 1;
+
+	@media(max-width: 1615px) {
+	  padding: 40px 15px;
+	}
 
 	.select-lang {
 	  -webkit-appearance: none;

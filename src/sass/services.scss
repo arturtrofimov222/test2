@@ -6,6 +6,10 @@
   font-family: $f_merriweather;
   position: relative;
 
+  @media(max-width: 1615px) {
+	padding-top: 230px;
+  }
+
   .heading {
 	padding-bottom: 50px;
 
@@ -79,9 +83,14 @@
 	  background: $c_white;
 	  border: 5px solid $c_grey2;
 	  border-radius: 50%;
-	  top: -21%;
+	  top: -19%;
 	  position: absolute;
 	  @include flex-center-center;
+
+	  @media(max-width: 1615px) {
+		width: 50px;
+		height: 50px;
+	  }
 	}
 
 	.slick-prev {
@@ -109,6 +118,16 @@
 	  color: $c_black;
 	  max-width: 929px;
 	  flex-shrink: 0;
+	  @media(max-width: 1615px) {
+		font-size: 40px;
+		line-height: 48px;
+		max-width: 815px;
+	  }
+	  @media(max-width: 1367px) {
+		font-size: 34px;
+		line-height: 42px;
+		max-width: 750px;
+	  }
 	}
   }
 

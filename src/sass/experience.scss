@@ -19,6 +19,10 @@
 	  max-width: 1430px;
 	  padding: 80px;
 
+	  @media (max-width: 1615px) {
+		max-width: 98%;
+	  }
+
 	  .experience-slider {
 		width: 100%;
 
@@ -31,6 +35,11 @@
 		  top: -127%;
 		  position: absolute;
 		  background: transparent;
+
+		  @media(max-width: 1615px) {
+			width: 50px;
+			height: 50px;
+		  }
 		}
 
 		.slick-prev {
@@ -84,6 +93,11 @@
 		text-transform: uppercase;
 		color: $c_white;
 		max-width: 238px;
+
+		@media(max-width: 1615px) {
+		  font-size: 26px;
+		  line-height: 32px;
+		}
 	  }
 	}
 
